@@ -42,4 +42,4 @@ dateDiffCheck.addEventListener("click", clock);
 
 setInterval(() => {
 	clock();
-}, 500);
+}, 50);
