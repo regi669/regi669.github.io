@@ -28,16 +28,18 @@ function clock() {
 	);
 	const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
 	const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+	const miliseconds = Math.floor(timeDiff % 1000);
 
 	// Assign values to inputs
 	inputs[0].value = days;
 	inputs[1].value = hours;
 	inputs[2].value = minutes;
 	inputs[3].value = seconds;
+	inputs[4].value = miliseconds;
 }
 
 dateDiffCheck.addEventListener("click", clock);
 
 setInterval(() => {
 	clock();
-}, 1000);
+}, 1);
