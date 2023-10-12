@@ -10,9 +10,12 @@
 .main {
 	height: 100vh;
 	width: 100%;
-	background-image: url("20230716_170659.jpg");
+	background: url("20230716_170659.jpg") no-repeat center center fixed;
 	background-size: cover;
 	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 .overlay {
@@ -67,6 +70,7 @@ input {
 	margin: 2rem;
 }
 
+#select-end-date,
 #currentDateShow {
 	font-size: 1.4rem;
 	/* margin: 1rem; */
